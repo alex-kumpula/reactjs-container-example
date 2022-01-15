@@ -1,5 +1,6 @@
 # Note: You can use any Debian/Ubuntu based image you want. 
-FROM mcr.microsoft.com/vscode/devcontainers/base:bullseye
+ARG VARIANT="16-bullseye"
+FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:0-${VARIANT}
 
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"

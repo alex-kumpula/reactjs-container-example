@@ -15,6 +15,10 @@ ARG CLI_VERSION="latest"
 
 # Enable new "BUILDKIT" mode for Docker CLI
 ENV DOCKER_BUILDKIT=1
+#ENV CHOKIDAR_USEPOLLING=true
+
+EXPOSE 3000
+EXPOSE 35729
 
 # Install needed packages and setup non-root user. Use a separate RUN statement to add your
 # own dependencies. A user of "automatic" attempts to reuse an user ID if one already exists.

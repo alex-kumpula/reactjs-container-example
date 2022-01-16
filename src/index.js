@@ -1,1 +1,11 @@
-document.querySelector('#fromjs').innerHTML = `<h1>From index.js</h1>`;
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './styles/styles.css';
+import App from './App.js'
+
+ReactDOM.render(
+    <App></App>,
+    document.querySelector(
+        '#root'
+    )
+);
